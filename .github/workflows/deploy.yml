@@ -41,3 +41,6 @@ jobs:
       - name: Terraform Apply
         id: apply  # Fixed spacing
         run: terraform apply -auto-approve tfplan  # Use plan file for consistency
+      - name: Terraform Destroy
+        id: destroy  # Fixed spacing
+        run: terraform destroy -auto-approve tfplan  # Use plan file for consistency
